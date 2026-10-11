@@ -39,9 +39,6 @@ def main():
                 gene_name = split_gene[0]
                 gene_id = split_gene[1]
 
-                # TODO remove
-                if not gene_name == 'KIAA1274': continue
-
                 print(f"{gene_name}")
 
                 gene_sample_info = "/expanse/projects/gymreklab/mlamkin/GeneExprPredictor_data/model_results/predicted_gene_expression/gtex/Cells_EBV-transformed_lymphocytes/Cells_EBV-transformed_lymphocytes.v8.subset_samples.txt"
