@@ -5,26 +5,19 @@ Methods/Pipelines for generating figures for the paper "Incorporating tandem rep
 
 Notebooks for generating main and supplementary figures found in the `figure_notebooks` folder. These include:
 
+* `association_pval_validation.ipynb`: Creates main figures for the evaluation of linear and nonlinear tandem repeat association tests in Geuvadis and GTEx LCLs.
+* `data_and_model_validation.ipynb`: Creates the majority main and supplementary figures surrounding the analysis of gene expression prediction models in SNP only, SNP+TR, and nonlinear settings. 
+* `model_simulations.ipynb`: Creates main and supplementary figures about simulating causal SNPs and TRs with varying heritability. 
+* `strat_plots.ipynb`: Creates main and supplementary figures about plotting nonlinear effects of tandem repeats. 
 
 ## Analysis Scripts
 
 Main scripts for model training/imputing, eSTR effect detection, and main/supplementary figures found in the `scripts` folder. These include:
 
-* `gene_model_pred.py`:
+* `gene_model_pred.py`: Main analysis script that trains and outputs gene expression prediction models for SNP only, SNP+TR, and nonlinear settings.
 * `impute_expression.py`:
 * `nonlinear_str_gene_detection.py`:
 * `expression_comparison.py`:
 * `model_sims.py`:
 * `ball_and_stick_plots.py`:
 * `ld_gain_plots.py`:
-
-Files
-1. association_pval_validation.ipynb - Evaluation of linear and nonlinear tandem repeat association tests in Geuvadis and GTEx LCLs.
-2. ball_and_stick_plots.py - Script to generate plots that compare the features and their coefficients for the best SNP only and SNP+TR models. Also creates gene expression plots of the top tandem repeats for EUR and YRI data.
-3. data_and_model_validation.ipynb - Majority of figures and analyses performed here. Covers gene expression model analysis within population, cross population, and cross dataset for linear and nonlinear models. 
-4. expression_comparison.py - Output's predicted R-squared by comparing true expression to predicted expression in EUR and AFR samples in GTEx. 
-5. gene_model_pred.py - Tool to create gene expression prediction models and use those models to make prediction on input data. 
-6. impute_expression.py - Creates predicted expression from an input of genotypes, model, and model variants. 
-7. ld_gain_plots.py - Script to create plots comparing LD and gain in EUR and YRI samples. 
-8. model_sims.py - Simulation script for multi and single causal variable scenarios. 
-9. strat_plots.ipynb - Creates plots that showcase the nonlinearity of TRs by holding an allele copy number constant and varying the second allele copy number, doing this for each unique allele copy number. 
