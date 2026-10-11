@@ -3,14 +3,20 @@ Methods/Pipelines for generating figures for the paper "Incorporating tandem rep
 
 ## Figure Notebooks
 
+Notebooks for generating main and supplementary figures found in the `figure_notebooks` folder. These include:
+
 
 ## Analysis Scripts
 
-* `scripts/gene_model_pred.py`
-* `scripts/impute_expression.py`
-* `scripts/nonlinear_str_gene_detection.py`
-* `scripts/expression_comparison.py`
+Main scripts for model training/imputing, eSTR effect detection, and main/supplementary figures found in the `scripts` folder. These include:
 
+* `gene_model_pred.py`:
+* `impute_expression.py`:
+* `nonlinear_str_gene_detection.py`:
+* `expression_comparison.py`:
+* `model_sims.py`:
+* `ball_and_stick_plots.py`:
+* `ld_gain_plots.py`:
 
 Files
 1. association_pval_validation.ipynb - Evaluation of linear and nonlinear tandem repeat association tests in Geuvadis and GTEx LCLs.
