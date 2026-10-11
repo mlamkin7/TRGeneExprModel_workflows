@@ -15,9 +15,9 @@ Notebooks for generating main and supplementary figures found in the `figure_not
 Main scripts for model training/imputing, eSTR effect detection, and main/supplementary figures found in the `scripts` folder. These include:
 
 * `gene_model_pred.py`: Main analysis script that trains and outputs gene expression prediction models for SNP only, SNP+TR, and nonlinear settings.
-* `impute_expression.py`:
-* `nonlinear_str_gene_detection.py`:
-* `expression_comparison.py`:
-* `model_sims.py`:
-* `ball_and_stick_plots.py`:
-* `ld_gain_plots.py`:
+* `impute_expression.py`: Script that takes in model, variant, and scaler outputs from `gene_model_pred.py` and applies them to new genotype data to impute expression. 
+* `nonlinear_str_gene_detection.py`: Main script that takes in tandem repeat genotypes and gene expression data and runs linear and quadratic associations tests. 
+* `expression_comparison.py`: Script that computes R-squared for GTEx imputed expression. 
+* `model_sims.py`: Script that performs simulations that simulate causal variants and how they impact model accuracy for SNP only and SNP+TR models. 
+* `ball_and_stick_plots.py`: Script that creates plots that compare the coefficients of the non-zero features present in the SNP only and SNP+TR models. Additionally, it outputs a bar plot for each TR genotype and the respective gene expression for EUR and YRI individuals.
+* `ld_gain_plots.py`: Script that creates supplementary plots surrounding how LD impacts model R-squared gain. 
