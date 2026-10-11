@@ -1,6 +1,17 @@
 # TRGeneExprModel_workflows
 Methods/Pipelines for generating figures for the paper "Incorporating tandem repeats improves gene expression prediction models"
 
+## Figure Notebooks
+
+
+## Analysis Scripts
+
+* `scripts/gene_model_pred.py`
+* `scripts/impute_expression.py`
+* `scripts/nonlinear_str_gene_detection.py`
+* `scripts/expression_comparison.py`
+
+
 Files
 1. association_pval_validation.ipynb - Evaluation of linear and nonlinear tandem repeat association tests in Geuvadis and GTEx LCLs.
 2. ball_and_stick_plots.py - Script to generate plots that compare the features and their coefficients for the best SNP only and SNP+TR models. Also creates gene expression plots of the top tandem repeats for EUR and YRI data.
